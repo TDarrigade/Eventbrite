@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  get 'users/new'
+ 
 
-  get 'users/create'
-
-  get 'users/show'
-
-root'users#show'
+root'users#index'
 
   get    'signup',   to: 'users#new'
   get    '/login',   to: 'sessions#new'
