@@ -1,0 +1,8 @@
+<% if @user == current_user %>
+<h2>Nom d'utilisateur connecté : <%= @user.name %></h2>
+<p></p>
+<h3><p> <%= link_to("retour a l'acceuil", root_path) %> </p> </h3>
+ 
+<% else %>
+<h2>Bien essayé, mais non! </h2>
+<% end %>
